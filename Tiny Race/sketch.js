@@ -1,4 +1,4 @@
-let racerXs = [30, 30, 30];
+let racerXs = [30, 30, 30, 30, 30];
 let startY = 50;
 let yStep = 60;
 let finishX = 560;
@@ -14,6 +14,8 @@ function draw() {
     let y = startY + yStep * i;
     if (racerXs[i] < finishX) {
       racerXs[i] += random(1, 3);
+      racerXs[i] += random(2, 5);
+      
     }
     circle(racerXs[i], y, 24);
   }
